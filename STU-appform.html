@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdUIMS - Application Form</title>
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="css/STU-appform.css">
+    <script src="js/STU-appform.js"></script>
+</head>
+<body class="bg-gradient">
+    <header class="header">
+        <div class="header-left">
+            <a href="https://www.adamson.edu.ph/v1/" target="_blank"><img src="images/AdUlogo.png" alt="AdU Logo" class="logo-adu"></a>
+            <a href="STU-homepage.html" class="IMS-text">ADU-IMS</a>
+        </div>
+        <div class="header-right">
+            <span class="text-user">Juan Dela Cruz</span>
+            <img src="images/user-icon.png" alt="User Icon" class="icon-user">
+        </div>
+    </header>
+    <main>
+        <h3 class="appform-header">Application Form</h3>
+        <div class="appform-container">
+            <div class="appform-container-left">
+                <div class="appform-date-container">
+                    <p class="appform-datetxt">Date:</p>
+                    <div id="date" class="appform-datetxt" style="font-weight: normal;">Loading...</div>
+                    <script> updateDate(); // Run immediately</script>
+                </div>
+                <p class="appform-txt">Select Document</p>
+                <select name="document" id="documenttype" class="appform-dropdown" onchange="checkOption()">
+                    <option value="Recommendation-Letter">Recommendation Letter</option>
+                    <option value="Intent-Letter">Letter of Intent</option>
+                    <option value="Responsibility-letter">Letter of Responsibility</option>
+                    <option value="Activity-Form">Activity Form</option>
+                    <option value="Memorandum of Agreement">Memorandum of Agreement</option>
+                    <option value="Medical Certificate">Medical Certificate</option>
+                    <option value="Consent and Release Form">Consent and Release Form</option>
+                    <option value="Other Document">Other Document</option>
+                </select>
+                <div id="otherDocumentDiv" style="display: none;">
+                    <label for="otherDocument" class="appform-specify">Please specify:</label><br>
+                    <input type="text" id="otherDocument" placeholder="Enter document type" class="appform-other">
+                </div>
+                <div>
+                    <label for="remarks" class="appform-remarks">Remarks:</label><br>
+                    <input id="remarks" type="text" placeholder="Add Remarks" class="appform-remarksbox">
+                </div>
+            </div>
+            <div class="appform-container-right">
+                <p class="appform-filetxt">Attach File</p><br>
+                <label for="file" class="appform-filebox" id="fileattachment">Drag & Drop files here or click to upload
+                <input type="file" id="file" name="file" accept=".pdf,.jpg, .jpeg, .png">
+                </label>
+            </div> 
+        </div>
+
+    </main>
+</body>

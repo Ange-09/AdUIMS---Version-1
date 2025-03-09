@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Home Page Button styles */
+.hpbutton-container {
+    display: flex;
+    flex-direction: column; /* Aligns buttons vertically */
+    gap: 40px; /* Space between buttons */
+    justify-content: left;
+    padding-top: 60px;
+}
+
+.hpbutton {
+    position: relative;
+    padding: 50px;
+    left: 75px;
+    width: 350px;
+    height: 250px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #003366; /* Grey button */
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hpbutton:hover {
+    background-color: #004b99; /* Lighter red */
+    transform: scale(1.1); /* Slightly enlarges */
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+

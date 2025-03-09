@@ -1,0 +1,133 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appform-header{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    top: 70px;
+    margin-left: 100px;
+}
+
+.appform-container{
+    display: flex;
+    position: relative;
+    max-width: fit-content;
+}
+
+.appform-container-left{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: fit-content;
+    padding:100px;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.appform-date-container {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 10px; /* Space between "Date:" and "Loading..." */
+}
+
+.appform-datetxt{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    top: 20px;
+}
+
+.appform-txt{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    top: 20px;
+}
+
+.appform-dropdown{
+    width: 550px;
+    position: relative; 
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.appform-specify{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appform-other{
+    width: 550px;
+    position: relative; 
+    font-size: 20px;
+    border-width: 1px;
+    color: #000000;
+}
+
+.appform-remarks{
+    width: 550px;
+    position: relative; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.appform-remarksbox{
+    width: 550px;
+    height: 200px;
+    position: relative;
+    font-size: 20px;
+    color: #000000;
+    border-width: 1px;
+    text-align: center;
+}
+
+.appform-container-right{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: fit-content;
+    margin-top: 70px;
+}
+
+.appform-file{
+    font-size: 20px;
+    border-width: 1px;
+    color: #000000;
+}
+
+.appform-filetxt{
+    margin-top: 95px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appform-filebox{
+    margin-top: 55px;
+    width: 550px;
+    height: 200px;
+    border: 2px dashed #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appform-filebox input[type="file"]{
+    display: none;
+}
