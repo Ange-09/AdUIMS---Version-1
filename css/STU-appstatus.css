@@ -1,0 +1,50 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+}
+
+.status-name{
+    position: relative;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.status-icon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.status-table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.status-table th{
+    background-color: #f2f2f2;
+    color: #ffffff;
+    font-weight: bold;
+}
