@@ -131,3 +131,44 @@
 .appform-filebox input[type="file"]{
     display: none;
 }
+
+.appform-container-bottom{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 1130px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    max-width: fit-content;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.appform-next{
+    align-self: flex-end;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #003366;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appform-back{
+    align-self: flex-end;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #444444;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}

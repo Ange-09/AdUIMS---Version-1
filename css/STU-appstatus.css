@@ -20,12 +20,15 @@
     position: relative;
     font-size: 20px;
     margin-left: 10px;
+    margin-top: 50px;
 }
 
 .status-icon{
     position: relative;
     height: 30px;
     width: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
 .table-container{
@@ -60,3 +63,9 @@
     padding: 10px;
     font-size: 18px;
 }
+
+.status-table tbody tr:hover{
+    background-color: #87CEFA;
+    transition: background-color 0.5s ease-in-out;
+}
+
